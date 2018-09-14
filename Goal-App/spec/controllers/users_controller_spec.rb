@@ -23,6 +23,6 @@ RSpec.describe UsersController, type: :controller do
         get :show, params: {id: user.id}
         # user = User.find_by(id: user.id)
         expect(response).to render_template(:show)
-    end
+      end
     end
 end
