@@ -1,0 +1,10 @@
+<h1>New</h1>
+
+<form action="<%=users_url%>" method="post">
+  <input type="hidden" name="authenticity_token" value=" <%=form_authenticity_token%>">
+  Enter Username
+  <input type="text" name="user[username]">
+  Enter Password
+  <input type="password" name="user[password]">
+  <input type="submit" value="Create">
+</form>
